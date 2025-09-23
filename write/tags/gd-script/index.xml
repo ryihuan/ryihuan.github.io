@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GD Script on SOS</title>
+    <link>https://ryihuan.github.io/write/tags/gd-script/</link>
+    <description>Recent content in GD Script on SOS</description>
+    <generator>Hugo</generator>
+    <language>cn</language>
+    <lastBuildDate>Tue, 23 Sep 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://ryihuan.github.io/write/tags/gd-script/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GD Script教程笔记|Brackeys</title>
+      <link>https://ryihuan.github.io/write/posts/note/</link>
+      <pubDate>Tue, 23 Sep 2025 00:00:00 +0000</pubDate>
+      <guid>https://ryihuan.github.io/write/posts/note/</guid>
+      <description>&lt;p&gt;对照Brackeys的教程做的个人学习笔记&lt;/p&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;本来写在星屑页面上，但觉得搭个博客来写会更好阅读一些，于是就搭了这个博客（？饺子醋）&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
