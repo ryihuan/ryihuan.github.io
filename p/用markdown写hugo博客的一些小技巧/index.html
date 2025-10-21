@@ -10,7 +10,7 @@
 <meta property='og:description' content="一边写博客一边整理中">
 <meta property='og:url' content='https://ryihuan.github.io/p/%E7%94%A8markdown%E5%86%99hugo%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E5%B0%8F%E6%8A%80%E5%B7%A7/'>
 <meta property='og:site_name' content='某人的小窝'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='KaTeX' /><meta property='article:tag' content='iframe' /><meta property='article:tag' content='markmap' /><meta property='article:published_time' content='2025-10-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-10-18T14:41:55&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Markdown' /><meta property='article:tag' content='hugo' /><meta property='article:tag' content='KaTeX' /><meta property='article:tag' content='iframe' /><meta property='article:tag' content='markmap' /><meta property='article:published_time' content='2025-10-17T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-10-21T19:42:00&#43;08:00'/>
 <meta name="twitter:title" content="用Markdown写Hugo博客的一些小技巧">
 <meta name="twitter:description" content="一边写博客一边整理中">
     <link rel="shortcut icon" href="/favicon.png" />
@@ -241,11 +241,7 @@ document.addEventListener('click', function(e) {
                 
                 
                 
-                    <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z"/>
-  <polyline points="15 6 9 12 15 18" style="transform-box: fill-box; transform-origin: 50% 50%;" transform="matrix(0, 1, -1, 0, -0.000001, 0)"/>
-</svg>
+                    <svg width="22px" height="22px" viewBox="0 0 5.28 5.28" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-width="0.32999999999999996" d="M0.825 1.1a0.275 0.275 0 0 1 0.275 -0.275h3.08a0.275 0.275 0 0 1 0.275 0.275v3.08a0.275 0.275 0 0 1 -0.275 0.275H1.1a0.275 0.275 0 0 1 -0.275 -0.275z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32999999999999996" d="m0.825 3.795 0.935 -0.935 0.66 0.66 1.1 -1.1 0.935 0.935"/></svg>
                 
                 <span>画廊</span>
             </a>
@@ -341,7 +337,12 @@ document.addEventListener('click', function(e) {
             <nav id="TableOfContents">
   <ol>
     <li><a href="#基本语法">基本语法</a></li>
-    <li><a href="#katex与渲染问题">KaTeX与渲染问题</a></li>
+    <li><a href="#katex与渲染问题">KaTeX与渲染问题</a>
+      <ol>
+        <li><a href="#渲染问题1转义符号无法显示">渲染问题1：转义符号无法显示</a></li>
+        <li><a href="#渲染问题2cdn被墙">渲染问题2：CDN被墙</a></li>
+      </ol>
+    </li>
     <li><a href="#短代码">短代码</a></li>
     <li><a href="#构建网页时不上传草稿">构建网页时不上传草稿</a></li>
     <li><a href="#使用iframe嵌入网页">使用iframe嵌入网页</a>
@@ -417,7 +418,7 @@ document.addEventListener('click', function(e) {
   </g>
 </svg>
                 <time>
-                    Oct 18, 2025 14:41 CST
+                    Oct 21, 2025 19:42 CST
                 </time>
             </div>
             <div>
@@ -430,7 +431,7 @@ document.addEventListener('click', function(e) {
 
 
                 <time class="article-time--reading">
-                    阅读时长: 3 分钟
+                    阅读时长: 4 分钟
                 </time>
             </div>
         
@@ -480,7 +481,8 @@ document.addEventListener('click', function(e) {
     
 </a><br>
 注意如果需要显示KaTeX公式需要在Frontmatter里写<code>math: true</code></p>
-<p>Hugo有时会有无法正确渲染KaTeX的问题，我遇到的问题是用<code>$$</code>包裹的<code>%</code>或<code>\%</code>无法显示<br>
+<h3 id="渲染问题1转义符号无法显示">渲染问题1：转义符号无法显示
+</h3><p>Hugo有时会有无法正确渲染KaTeX的问题，我遇到的问题是用<code>$$</code>包裹的<code>%</code>或<code>\%</code>无法显示<br>
 上网搜索找到了相应的解决办法：<a class="link" href="https://chlo.is/hugo-math-rendering/"  target="_blank" rel="noopener"
     >Chlorine：在Hugo博客中正确渲染多行数学公式
     <span style="white-space: nowrap;"><svg width=".7em"
@@ -512,6 +514,31 @@ document.addEventListener('click', function(e) {
 </span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">                        </span>- - <span class="l">$</span><span class="w"> </span><span class="c"># 这里</span><span class="w">
 </span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">                          </span>- <span class="l">$</span><span class="w"> </span><span class="c"># 这里</span></span></span></code></pre></div>
 </div><p>注意输入百分号或下划线等需要转义的符号还是需要在前面加反斜杠：<code>\%</code> <code>\_</code></p>
+<h3 id="渲染问题2cdn被墙">渲染问题2：CDN被墙
+</h3><p>更新一下：发现了新的问题，魔法上网KaTeX可以正确渲染，反之不能，排查后发现原因是<code>主题文件夹\data\external.yaml</code>中引用的CDN被墙<br>
+解决办法：<br>
+把<code>主题文件夹\data\external.yaml</code>（该路径仅对于Stack主题）下KaTeX的CDN地址换成墙内镜像站：</p>
+
+<div class="highlight-with-title" data-title="external.yaml">
+
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln"> 1</span><span class="cl"><span class="nt">KaTeX</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 2</span><span class="cl"><span class="w">    </span><span class="c"># - src: https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 3</span><span class="cl"><span class="w">    </span>- <span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="l">https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.9/katex.min.css</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 4</span><span class="cl"><span class="w">      </span><span class="nt">integrity</span><span class="p">:</span><span class="w"> </span><span class="l">sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 5</span><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">style</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 6</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln"> 7</span><span class="cl"><span class="w">    </span><span class="c"># - src: https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 8</span><span class="cl"><span class="w">    </span>- <span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="l">https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.9/katex.min.js</span><span class="w">
+</span></span></span><span class="line"><span class="ln"> 9</span><span class="cl"><span class="w">      </span><span class="nt">integrity</span><span class="p">:</span><span class="w"> </span><span class="l">sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8</span><span class="w">
+</span></span></span><span class="line"><span class="ln">10</span><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">script</span><span class="w">
+</span></span></span><span class="line"><span class="ln">11</span><span class="cl"><span class="w">      </span><span class="nt">defer</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
+</span></span></span><span class="line"><span class="ln">12</span><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="ln">13</span><span class="cl"><span class="w">    </span><span class="c"># - src: https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js</span><span class="w">
+</span></span></span><span class="line"><span class="ln">14</span><span class="cl"><span class="w">    </span>- <span class="nt">src</span><span class="p">:</span><span class="w"> </span><span class="l">https://cdn.bootcdn.net/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js</span><span class="w">
+</span></span></span><span class="line"><span class="ln">15</span><span class="cl"><span class="w">      </span><span class="nt">integrity</span><span class="p">:</span><span class="w"> </span><span class="l">sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05</span><span class="w">
+</span></span></span><span class="line"><span class="ln">16</span><span class="cl"><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l">script</span><span class="w">
+</span></span></span><span class="line"><span class="ln">17</span><span class="cl"><span class="w">      </span><span class="nt">defer</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span></span></span></code></pre></div>
+</div><p>修改后F5刷新一下本地预览页面应该就正常了</p>
 <h2 id="短代码">短代码
 </h2><p>可以参见<a class="link" href="https://donbro.vercel.app/p/daima/#%E7%9F%AD%E4%BB%A3%E7%A0%81%E5%BA%94%E7%94%A8"  target="_blank" rel="noopener"
     >树响集：短代码应用
@@ -993,7 +1020,7 @@ border-radius:20px;">
             
         
         发表了7篇文章 · 
-        总计25.61k字
+        总计25.93k字
     </section>
 
     <section class="powerby">
