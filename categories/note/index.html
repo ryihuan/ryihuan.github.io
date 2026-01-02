@@ -6,11 +6,11 @@
 
 <link rel='canonical' href='https://ryihuan.github.io/categories/note/'>
 
-<link rel="stylesheet" href="/scss/style.min.9a59db546bbed8a688fbbc7c64512dabf99da099cdd3d1794dbaf8e4495297c0.css"><meta property='og:title' content="Category: Godot学习笔记 - 某人的小窝">
+<link rel="stylesheet" href="/scss/style.min.b322a0b3e163f912c4838342deb097bda641b1e743526c353d3339f68dccb581.css"><meta property='og:title' content="Category: Godot学习笔记 - 某人的小窝">
 <meta property='og:description' content="互联网有房一族。">
 <meta property='og:url' content='https://ryihuan.github.io/categories/note/'>
 <meta property='og:site_name' content='某人的小窝'>
-<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2025-12-31T23:10:21&#43;08:00 '/><meta property='og:image' content='https://ryihuan.github.io/categories/note/godot_hit_me.png' />
+<meta property='og:type' content='website'><meta property='og:updated_time' content=' 2026-01-02T17:19:14&#43;08:00 '/><meta property='og:image' content='https://ryihuan.github.io/categories/note/godot_hit_me.png' />
 <meta name="twitter:title" content="Category: Godot学习笔记 - 某人的小窝">
 <meta name="twitter:description" content="互联网有房一族。"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ryihuan.github.io/categories/note/godot_hit_me.png' /><link rel="alternate" type="application/rss&#43;xml" href="https://ryihuan.github.io/categories/note/index.xml">
@@ -343,6 +343,14 @@ document.addEventListener('click', function(e) {
         
         <div class="widget-archive--list">
             <div class="archives-year">
+                    <a href="/archives/#2026">
+                        
+                            <span class="year">2026</span>
+                            <span class="count">1</span>
+                        
+                    </a> 
+                </div>
+            <div class="archives-year">
                     <a href="/archives/#2025">
                         
                             <span class="year">2025</span>
@@ -373,7 +381,7 @@ document.addEventListener('click', function(e) {
 
     <div class="tagCloud-tags">
         
-            <a href="/categories/diary/" class="font_size_4">
+            <a href="/categories/diary/" class="font_size_5">
                 博客装修日志
             </a>
         
@@ -414,20 +422,20 @@ document.addEventListener('click', function(e) {
 
     <div class="tagCloud-tags">
         
-            <a href="/tags/hugo/" class="font_size_3">
+            <a href="/tags/hugo/" class="font_size_4">
                 Hugo
+            </a>
+        
+            <a href="/tags/stack/" class="font_size_3">
+                Stack
+            </a>
+        
+            <a href="/tags/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/" class="font_size_3">
+                博客装修
             </a>
         
             <a href="/tags/godot/" class="font_size_2">
                 Godot
-            </a>
-        
-            <a href="/tags/stack/" class="font_size_2">
-                Stack
-            </a>
-        
-            <a href="/tags/%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/" class="font_size_2">
-                博客装修
             </a>
         
             <a href="/tags/gd-script/" class="font_size_1">
@@ -436,22 +444,6 @@ document.addEventListener('click', function(e) {
         
             <a href="/tags/iframe/" class="font_size_1">
                 Iframe
-            </a>
-        
-            <a href="/tags/katex/" class="font_size_1">
-                KaTeX
-            </a>
-        
-            <a href="/tags/markdown/" class="font_size_1">
-                Markdown
-            </a>
-        
-            <a href="/tags/markmap/" class="font_size_1">
-                Markmap
-            </a>
-        
-            <a href="/tags/repo/" class="font_size_1">
-                Repo
             </a>
         
     </div>
@@ -476,7 +468,7 @@ document.addEventListener('click', function(e) {
                 
             </div>
                 <div class="section-image">
-                    <img src="/categories/note/godot_hit_me_hu_73485747e0dba4ee.png" 
+                    <img src="/categories/note/godot_hit_me_hu_961f6aab899715a8.png" 
                             width="120"
                             height="120" 
                             loading="lazy">
@@ -547,8 +539,10 @@ document.addEventListener('click', function(e) {
         
             
         
-        发表了10篇文章 · 
-        总计41.42k字
+            
+        
+        发表了11篇文章 · 
+        总计42.97k字
     </section>
 
     <section class="powerby">
@@ -942,6 +936,86 @@ document.addEventListener('DOMContentLoaded', function() {
     document.addEventListener('DOMContentLoaded', function() {
         initCodeMoreBox();
     });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            const tocToggle = document.getElementById('toggle-toc');
+
+            if (tocToggle) {
+                const rightSidebar = document.querySelector('.sidebar.right-sidebar');
+
+                
+                function updateButtonVisibility() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const showThreshold = 200;
+
+                    if (scrollTop > showThreshold) {
+                        tocToggle.classList.add('visible');
+                    } else {
+                        
+                        if (!rightSidebar || !rightSidebar.classList.contains('show')) {
+                            tocToggle.classList.remove('visible');
+                        }
+                    }
+                }
+
+                
+                function debounce(func, wait) {
+                    let timeout;
+                    return function () {
+                        const context = this;
+                        const args = arguments;
+                        clearTimeout(timeout);
+                        timeout = setTimeout(() => func.apply(context, args), wait);
+                    };
+                }
+
+                
+                window.addEventListener('scroll', debounce(updateButtonVisibility, 100));
+
+                
+                setTimeout(updateButtonVisibility, 500);
+
+                
+                if (rightSidebar) {
+                    
+                    const mask = document.createElement('div');
+                    mask.className = 'toc-mask';
+                    document.body.appendChild(mask);
+
+                    
+                    tocToggle.addEventListener('click', function () {
+                        this.classList.toggle('is-active');
+                        rightSidebar.classList.toggle('show');
+                        mask.classList.toggle('show');
+                        document.body.classList.toggle('no-scroll');
+
+                        
+                        this.classList.add('visible');
+                    });
+
+                    
+                    mask.addEventListener('click', function () {
+                        tocToggle.classList.remove('is-active');
+                        rightSidebar.classList.remove('show');
+                        this.classList.remove('show');
+                        document.body.classList.remove('no-scroll');
+                    });
+
+                    
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape' && rightSidebar.classList.contains('show')) {
+                            tocToggle.classList.remove('is-active');
+                            rightSidebar.classList.remove('show');
+                            mask.classList.remove('show');
+                            document.body.classList.remove('no-scroll');
+                        }
+                    });
+                }
+            }
+        });
 </script>
     </body>
 </html>
