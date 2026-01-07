@@ -30,32 +30,75 @@
 
 
 
-
-
-
-
-&lt;div class=&#34;db-card&#34;&gt;
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW&#34;&gt;
     &lt;div class=&#34;db-card-subject&#34;&gt;
         &lt;div class=&#34;db-card-post&#34;&gt;
-            &lt;img src=&#34;&#34; alt=&#34;错误&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+            &lt;img src=&#34;&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
         &lt;/div&gt;
         &lt;div class=&#34;db-card-content&#34;&gt;
             &lt;div class=&#34;db-card-title&#34;&gt;
-                &lt;a href=&#34;https://neodb.social/tv/season/6tPYnexDe3m2y8m4U5YqiW&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34;&gt;获取失败&lt;/a&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6tPYnexDe3m2y8m4U5YqiW&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
             &lt;/div&gt;
-            &lt;div class=&#34;db-card-abstract&#34;&gt;
-                
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-content&#34;&gt;
                 
                 测试
                 
             &lt;/div&gt;
         &lt;/div&gt;
-        &lt;div class=&#34;db-card-cate&#34;&gt;Error&lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-category&#34;&gt;...&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;
 
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6tPYnexDe3m2y8m4U5YqiW&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6tPYnexDe3m2y8m4U5YqiW&#39;;
 
+        if (!apiUrl) return;
 
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;测试&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
 </description>
         </item>
         <item>

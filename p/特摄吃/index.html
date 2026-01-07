@@ -407,32 +407,75 @@ document.addEventListener('click', function(e) {
 
 
 
-
-
-
-
-<div class="db-card">
+<div class="db-card" id="neodb-card-6tPYnexDe3m2y8m4U5YqiW">
     <div class="db-card-subject">
         <div class="db-card-post">
-            <img src="" alt="错误" style="max-width: 100%; height: auto;">
+            <img src="" alt="加载中..." id="neodb-card-6tPYnexDe3m2y8m4U5YqiW-img" style="max-width: 100%; height: auto;">
         </div>
         <div class="db-card-content">
             <div class="db-card-title">
-                <a href="https://neodb.social/tv/season/6tPYnexDe3m2y8m4U5YqiW" class="cute" target="_blank" rel="noreferrer">获取失败</a>
+                <a href="https://neodb.social/tv/season/6tPYnexDe3m2y8m4U5YqiW" class="cute" target="_blank" rel="noreferrer" id="neodb-card-6tPYnexDe3m2y8m4U5YqiW-title">
+                    加载中...
+                </a>
             </div>
-            <div class="db-card-abstract">
-                
+            <div class="db-card-abstract" id="neodb-card-6tPYnexDe3m2y8m4U5YqiW-content">
                 
                 测试
                 
             </div>
         </div>
-        <div class="db-card-cate">Error</div>
+        <div class="db-card-cate" id="neodb-card-6tPYnexDe3m2y8m4U5YqiW-category">...</div>
     </div>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const cardId = 'neodb-card-6tPYnexDe3m2y8m4U5YqiW';
+        const apiUrl = 'https:\/\/neodb.social\/api\/tv\/season\/6tPYnexDe3m2y8m4U5YqiW';
 
+        if (!apiUrl) return;
 
+        
+        fetch(apiUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data => {
+                
+                const titleEl = document.getElementById(cardId + '-title');
+                if (titleEl && data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + '-img');
+                if (imgEl && data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || '封面图片';
+                }
+
+                
+                const contentEl = document.getElementById(cardId + '-content');
+                const customContent = '测试';
+                if (contentEl && !customContent.trim() && data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + '-category');
+                if (cateEl && data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error => {
+                console.error('Failed to fetch NeoDB data:', error);
+                
+            });
+    });
+</script>
 
 </section>
 
@@ -726,7 +769,7 @@ document.addEventListener('click', function(e) {
             
         
         发表了12篇文章 · 
-        总计45.90k字
+        总计45.91k字
     </section>
 
     <section class="powerby">
