@@ -7,7 +7,2752 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>尺途</copyright>
-        <lastBuildDate>Wed, 07 Jan 2026 22:54:36 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 10 Jan 2026 23:44:33 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>特摄吃</title>
+        <link>https://ryihuan.github.io/p/%E7%89%B9%E6%91%84%E5%90%83/</link>
+        <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+        
+        <guid>https://ryihuan.github.io/p/%E7%89%B9%E6%91%84%E5%90%83/</guid>
+        <description>&lt;img src="https://ryihuan.github.io/26/011004.png" alt="Featured image of post 特摄吃" /&gt;&lt;p&gt;&lt;em&gt;持续更新中&lt;/em&gt;&lt;br&gt;
+趁记忆还没有完全从我的脑子里流走，一边翻着写的观影串回忆一边写一下短评吧&lt;br&gt;
+NeoDB受网络影响加载不出来属于正常现象，为此画了加载图，可爱吧！&lt;/p&gt;
+&lt;p&gt;如果这篇文章有人看的话，我想说我写的全部是主观感受，而且我看剧不是特别追求逻辑，让我看爽了的就是好的。&lt;br&gt;
+短评可能会含有大量剧透！谨慎观看！&lt;/p&gt;
+&lt;h2 id=&#34;假面骑士&#34;&gt;假面骑士
+&lt;/h2&gt;&lt;h3 id=&#34;旧平成骑士&#34;&gt;旧平成骑士
+&lt;/h3&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-71A0raBngMyRmCKuJ9zYZ4&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-71A0raBngMyRmCKuJ9zYZ4-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/71A0raBngMyRmCKuJ9zYZ4&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-71A0raBngMyRmCKuJ9zYZ4-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-71A0raBngMyRmCKuJ9zYZ4-content&#34;&gt;
+                
+                没看完
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-71A0raBngMyRmCKuJ9zYZ4-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-71A0raBngMyRmCKuJ9zYZ4&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/71A0raBngMyRmCKuJ9zYZ4&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;没看完&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-1B1j99tn9Ol9ZkDR15iW0a&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-1B1j99tn9Ol9ZkDR15iW0a-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/1B1j99tn9Ol9ZkDR15iW0a&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-1B1j99tn9Ol9ZkDR15iW0a-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-1B1j99tn9Ol9ZkDR15iW0a-content&#34;&gt;
+                
+                没看完
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-1B1j99tn9Ol9ZkDR15iW0a-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-1B1j99tn9Ol9ZkDR15iW0a&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/1B1j99tn9Ol9ZkDR15iW0a&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;没看完&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-3BzeXZq7M6ORVfyE6VTHw6&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-3BzeXZq7M6ORVfyE6VTHw6-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/3BzeXZq7M6ORVfyE6VTHw6&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-3BzeXZq7M6ORVfyE6VTHw6-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-3BzeXZq7M6ORVfyE6VTHw6-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-3BzeXZq7M6ORVfyE6VTHw6-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-3BzeXZq7M6ORVfyE6VTHw6&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/3BzeXZq7M6ORVfyE6VTHw6&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6S6Mtt8Dzo2qtyqvaAhIEd&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6S6Mtt8Dzo2qtyqvaAhIEd&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6S6Mtt8Dzo2qtyqvaAhIEd&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-0VPCzIuAkP7r7m1FkHtzAI&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-0VPCzIuAkP7r7m1FkHtzAI-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/0VPCzIuAkP7r7m1FkHtzAI&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-0VPCzIuAkP7r7m1FkHtzAI-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-0VPCzIuAkP7r7m1FkHtzAI-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-0VPCzIuAkP7r7m1FkHtzAI-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-0VPCzIuAkP7r7m1FkHtzAI&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/0VPCzIuAkP7r7m1FkHtzAI&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-4w1b0RjNP6m8cyQXJvAIFc&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-4w1b0RjNP6m8cyQXJvAIFc-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/4w1b0RjNP6m8cyQXJvAIFc&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-4w1b0RjNP6m8cyQXJvAIFc-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-4w1b0RjNP6m8cyQXJvAIFc-content&#34;&gt;
+                
+                没看
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-4w1b0RjNP6m8cyQXJvAIFc-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-4w1b0RjNP6m8cyQXJvAIFc&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/4w1b0RjNP6m8cyQXJvAIFc&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;没看&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6RV4fdXJOpBwWZqNOJH013&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6RV4fdXJOpBwWZqNOJH013-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6RV4fdXJOpBwWZqNOJH013&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6RV4fdXJOpBwWZqNOJH013-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6RV4fdXJOpBwWZqNOJH013-content&#34;&gt;
+                
+                没看
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6RV4fdXJOpBwWZqNOJH013-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6RV4fdXJOpBwWZqNOJH013&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6RV4fdXJOpBwWZqNOJH013&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;没看&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/0kwPRMzmJ0hzfVqgDtKdwp&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp-content&#34;&gt;
+                
+                第一次看的小林靖子写的骑士。电王真好看！看着看着已经在心里给良太郎开好了大院，我觉得良太郎很有表游戏的气质，虽然看起来很弱气但是内心很坚强，也很有自己坚持的东西，强大到足以驯服这么多异魔神……&lt;br&gt;
+几乎可以说每一个角色都好喜欢，小龙，侑斗，爱理，hana酱……第一次看靖子阿姨写的骑士就已经是靖子阿姨的狗了，主人我要永远追随你&lt;br&gt;
+之前有看到网友说写一个好结局的技巧是一件成功的事、一件失败的事、一件模棱两可的事（大意）。我觉得靖子阿姨好会写这种结局，处于BE和HE之间的模糊地带，还说不上来结局是否圆满，眼泪就已经在流了，只知道列车还会一直地开。&lt;br&gt;
+回忆起来有很多很有印象的片段，虽然细节都已经有点记不清了……我觉得我最喜欢的还是圣诞节吧，在最开心最美的时候把一切打碎，打碎之后又修修补补缝回来，虽然赚了我好多眼泪但电王还是我心里特别特别美好的一个奇幻故事。
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-0kwPRMzmJ0hzfVqgDtKdwp&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/0kwPRMzmJ0hzfVqgDtKdwp&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;第一次看的小林靖子写的骑士。电王真好看！看着看着已经在心里给良太郎开好了大院，我觉得良太郎很有表游戏的气质，虽然看起来很弱气但是内心很坚强，也很有自己坚持的东西，强大到足以驯服这么多异魔神……\u003cbr\u003e\r\n几乎可以说每一个角色都好喜欢，小龙，侑斗，爱理，hana酱……第一次看靖子阿姨写的骑士就已经是靖子阿姨的狗了，主人我要永远追随你\u003cbr\u003e\r\n之前有看到网友说写一个好结局的技巧是一件成功的事、一件失败的事、一件模棱两可的事（大意）。我觉得靖子阿姨好会写这种结局，处于BE和HE之间的模糊地带，还说不上来结局是否圆满，眼泪就已经在流了，只知道列车还会一直地开。\u003cbr\u003e\r\n回忆起来有很多很有印象的片段，虽然细节都已经有点记不清了……我觉得我最喜欢的还是圣诞节吧，在最开心最美的时候把一切打碎，打碎之后又修修补补缝回来，虽然赚了我好多眼泪但电王还是我心里特别特别美好的一个奇幻故事。&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/7N56h7Ox5S7sySJ8Ha3uWc&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-7N56h7Ox5S7sySJ8Ha3uWc&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/7N56h7Ox5S7sySJ8Ha3uWc&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-703NhgO2RlKPJHTXTvIBoZ&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-703NhgO2RlKPJHTXTvIBoZ-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/703NhgO2RlKPJHTXTvIBoZ&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-703NhgO2RlKPJHTXTvIBoZ-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-703NhgO2RlKPJHTXTvIBoZ-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-703NhgO2RlKPJHTXTvIBoZ-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-703NhgO2RlKPJHTXTvIBoZ&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/703NhgO2RlKPJHTXTvIBoZ&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;&lt;/p&gt;
+&lt;h3 id=&#34;新平成骑士&#34;&gt;新平成骑士
+&lt;/h3&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/31Czum2IycRIH3CNp56Ild&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-31Czum2IycRIH3CNp56Ild&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/31Czum2IycRIH3CNp56Ild&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-5zqiKLuyTKemFxyyzEELzI&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-5zqiKLuyTKemFxyyzEELzI-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/5zqiKLuyTKemFxyyzEELzI&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-5zqiKLuyTKemFxyyzEELzI-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-5zqiKLuyTKemFxyyzEELzI-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-5zqiKLuyTKemFxyyzEELzI-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-5zqiKLuyTKemFxyyzEELzI&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/5zqiKLuyTKemFxyyzEELzI&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/3RTb1sybRUZ1CJ0XPm7bnp&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-3RTb1sybRUZ1CJ0XPm7bnp&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/3RTb1sybRUZ1CJ0XPm7bnp&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-33jaaqcSD5vdUdLpnwu5tp&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-33jaaqcSD5vdUdLpnwu5tp-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/33jaaqcSD5vdUdLpnwu5tp&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-33jaaqcSD5vdUdLpnwu5tp-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-33jaaqcSD5vdUdLpnwu5tp-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-33jaaqcSD5vdUdLpnwu5tp-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-33jaaqcSD5vdUdLpnwu5tp&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/33jaaqcSD5vdUdLpnwu5tp&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-3lJyUl4GCHaxEDGrtUHpyp&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-3lJyUl4GCHaxEDGrtUHpyp-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/3lJyUl4GCHaxEDGrtUHpyp&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-3lJyUl4GCHaxEDGrtUHpyp-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-3lJyUl4GCHaxEDGrtUHpyp-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-3lJyUl4GCHaxEDGrtUHpyp-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-3lJyUl4GCHaxEDGrtUHpyp&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/3lJyUl4GCHaxEDGrtUHpyp&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-0vJQHFWWA0xuYU7g0zyDmV&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-0vJQHFWWA0xuYU7g0zyDmV-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/0vJQHFWWA0xuYU7g0zyDmV&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-0vJQHFWWA0xuYU7g0zyDmV-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-0vJQHFWWA0xuYU7g0zyDmV-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-0vJQHFWWA0xuYU7g0zyDmV-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-0vJQHFWWA0xuYU7g0zyDmV&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/0vJQHFWWA0xuYU7g0zyDmV&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-0e8LSQ01bdaltA84K6hbxm&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-0e8LSQ01bdaltA84K6hbxm-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/0e8LSQ01bdaltA84K6hbxm&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-0e8LSQ01bdaltA84K6hbxm-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-0e8LSQ01bdaltA84K6hbxm-content&#34;&gt;
+                
+                没看
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-0e8LSQ01bdaltA84K6hbxm-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-0e8LSQ01bdaltA84K6hbxm&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/0e8LSQ01bdaltA84K6hbxm&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;没看&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6tPYnexDe3m2y8m4U5YqiW&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-content&#34;&gt;
+                
+                最早看的骑士，突然开始看骑士第一是因为看到首页好多网友在看，第二是有天突然回忆起来以前刷微博有网友提过喜欢游戏王GX十尤十的都可以来看某部假面骑士！当时真的用心把这一部的名字记下来了，努力回忆居然真的回忆起来了，就是EA啊！&lt;br&gt;
+也是最早看的高桥作品了，出道即巅峰……看的时候带着十尤十的印象磕了梦帕，现在已经淡了，我觉得还是没有尤贝尔浓烈，帕被驯服之后完全就是永梦的好大儿，不是特别吃这一套……&lt;br&gt;
+抛开cp谈谈作品本身！当时看的时候真的被惊艳到了，假面骑士原来这么好看的吗怎么以前没人告诉我。不过回忆起来觉得最后几集还是太折磨了，那种打完一个boss发现boss后面还有boss的感觉，看得有点淡淡地累，当医生好累啊！结局包了个大饺子，当时看的时候不太喜欢，后来看太多be了觉得包饺子挺好的，起码EA这个饺子包得还可以吧。&lt;br&gt;
+看完本篇之后很久因为34磕了永黎被逼回来看小说和外传，小说写得太同人了啊啊啊……我不是很懂你们游戏制作人和天才玩家在玩什么play，这么一看EA封面M的背后就是一个很显眼的幻梦啊啊。原来你们是高桥心里的美帝。
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6tPYnexDe3m2y8m4U5YqiW-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6tPYnexDe3m2y8m4U5YqiW&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6tPYnexDe3m2y8m4U5YqiW&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;最早看的骑士，突然开始看骑士第一是因为看到首页好多网友在看，第二是有天突然回忆起来以前刷微博有网友提过喜欢游戏王GX十尤十的都可以来看某部假面骑士！当时真的用心把这一部的名字记下来了，努力回忆居然真的回忆起来了，就是EA啊！\u003cbr\u003e\r\n也是最早看的高桥作品了，出道即巅峰……看的时候带着十尤十的印象磕了梦帕，现在已经淡了，我觉得还是没有尤贝尔浓烈，帕被驯服之后完全就是永梦的好大儿，不是特别吃这一套……\u003cbr\u003e\r\n抛开cp谈谈作品本身！当时看的时候真的被惊艳到了，假面骑士原来这么好看的吗怎么以前没人告诉我。不过回忆起来觉得最后几集还是太折磨了，那种打完一个boss发现boss后面还有boss的感觉，看得有点淡淡地累，当医生好累啊！结局包了个大饺子，当时看的时候不太喜欢，后来看太多be了觉得包饺子挺好的，起码EA这个饺子包得还可以吧。\u003cbr\u003e\r\n看完本篇之后很久因为34磕了永黎被逼回来看小说和外传，小说写得太同人了啊啊啊……我不是很懂你们游戏制作人和天才玩家在玩什么play，这么一看EA封面M的背后就是一个很显眼的幻梦啊啊。原来你们是高桥心里的美帝。&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/4kj9vwPsqGJ8CHejaSD4Jv&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-4kj9vwPsqGJ8CHejaSD4Jv&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/4kj9vwPsqGJ8CHejaSD4Jv&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-5cGLPzEnRNTwS4b03I2Cmo&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-5cGLPzEnRNTwS4b03I2Cmo-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/5cGLPzEnRNTwS4b03I2Cmo&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-5cGLPzEnRNTwS4b03I2Cmo-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-5cGLPzEnRNTwS4b03I2Cmo-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-5cGLPzEnRNTwS4b03I2Cmo-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-5cGLPzEnRNTwS4b03I2Cmo&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/5cGLPzEnRNTwS4b03I2Cmo&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;&lt;/p&gt;
+&lt;h3 id=&#34;令和骑士&#34;&gt;令和骑士
+&lt;/h3&gt;&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-4IPqXsIp1KNEa7M6rkCTfu&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-4IPqXsIp1KNEa7M6rkCTfu-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/4IPqXsIp1KNEa7M6rkCTfu&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-4IPqXsIp1KNEa7M6rkCTfu-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-4IPqXsIp1KNEa7M6rkCTfu-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-4IPqXsIp1KNEa7M6rkCTfu-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-4IPqXsIp1KNEa7M6rkCTfu&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/4IPqXsIp1KNEa7M6rkCTfu&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-4GDidv4XXsJMUFFMmNSCuY&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-4GDidv4XXsJMUFFMmNSCuY-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/4GDidv4XXsJMUFFMmNSCuY&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-4GDidv4XXsJMUFFMmNSCuY-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-4GDidv4XXsJMUFFMmNSCuY-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-4GDidv4XXsJMUFFMmNSCuY-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-4GDidv4XXsJMUFFMmNSCuY&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/4GDidv4XXsJMUFFMmNSCuY&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-7e3QXyj2Wo8CiirTJ74Iom&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-7e3QXyj2Wo8CiirTJ74Iom-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/7e3QXyj2Wo8CiirTJ74Iom&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-7e3QXyj2Wo8CiirTJ74Iom-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-7e3QXyj2Wo8CiirTJ74Iom-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-7e3QXyj2Wo8CiirTJ74Iom-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-7e3QXyj2Wo8CiirTJ74Iom&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/7e3QXyj2Wo8CiirTJ74Iom&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-29R8lvF8XhnY2EMM5X77hb&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-29R8lvF8XhnY2EMM5X77hb-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/29R8lvF8XhnY2EMM5X77hb&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-29R8lvF8XhnY2EMM5X77hb-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-29R8lvF8XhnY2EMM5X77hb-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-29R8lvF8XhnY2EMM5X77hb-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-29R8lvF8XhnY2EMM5X77hb&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/29R8lvF8XhnY2EMM5X77hb&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-2YKsenhOC3GRWdmimKUbnB&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-2YKsenhOC3GRWdmimKUbnB-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/2YKsenhOC3GRWdmimKUbnB&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-2YKsenhOC3GRWdmimKUbnB-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-2YKsenhOC3GRWdmimKUbnB-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-2YKsenhOC3GRWdmimKUbnB-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-2YKsenhOC3GRWdmimKUbnB&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/2YKsenhOC3GRWdmimKUbnB&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-02UCgBWxiIiv5iXIxQ5P6G&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-02UCgBWxiIiv5iXIxQ5P6G-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/02UCgBWxiIiv5iXIxQ5P6G&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-02UCgBWxiIiv5iXIxQ5P6G-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-02UCgBWxiIiv5iXIxQ5P6G-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-02UCgBWxiIiv5iXIxQ5P6G-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-02UCgBWxiIiv5iXIxQ5P6G&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/02UCgBWxiIiv5iXIxQ5P6G&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-5qLDfrx6C5qKPr3lNVznRi&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-5qLDfrx6C5qKPr3lNVznRi-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/5qLDfrx6C5qKPr3lNVznRi&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-5qLDfrx6C5qKPr3lNVznRi-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-5qLDfrx6C5qKPr3lNVznRi-content&#34;&gt;
+                
+                完结了再写
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-5qLDfrx6C5qKPr3lNVznRi-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-5qLDfrx6C5qKPr3lNVznRi&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/5qLDfrx6C5qKPr3lNVznRi&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;完结了再写&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;&lt;/p&gt;
+&lt;h2 id=&#34;超级战队&#34;&gt;超级战队
+&lt;/h2&gt;&lt;p&gt;看的还不太多先把看过的摆上来&lt;br&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-5XrqhPgHFpCNpgLo2cfVpI&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-5XrqhPgHFpCNpgLo2cfVpI-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/5XrqhPgHFpCNpgLo2cfVpI&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-5XrqhPgHFpCNpgLo2cfVpI-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-5XrqhPgHFpCNpgLo2cfVpI-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-5XrqhPgHFpCNpgLo2cfVpI-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-5XrqhPgHFpCNpgLo2cfVpI&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/5XrqhPgHFpCNpgLo2cfVpI&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6b54TacNtiZL1N1g8NLXl7&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6b54TacNtiZL1N1g8NLXl7-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6b54TacNtiZL1N1g8NLXl7&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6b54TacNtiZL1N1g8NLXl7-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6b54TacNtiZL1N1g8NLXl7-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6b54TacNtiZL1N1g8NLXl7-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6b54TacNtiZL1N1g8NLXl7&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6b54TacNtiZL1N1g8NLXl7&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6UVNzV3ZZLTxCvTSY4gBxc&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6UVNzV3ZZLTxCvTSY4gBxc&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6UVNzV3ZZLTxCvTSY4gBxc&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-5zYMHW8TTds4SPp5vqhFGQ&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-5zYMHW8TTds4SPp5vqhFGQ-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/5zYMHW8TTds4SPp5vqhFGQ&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-5zYMHW8TTds4SPp5vqhFGQ-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-5zYMHW8TTds4SPp5vqhFGQ-content&#34;&gt;
+                
+                待评价
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-5zYMHW8TTds4SPp5vqhFGQ-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-5zYMHW8TTds4SPp5vqhFGQ&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/5zYMHW8TTds4SPp5vqhFGQ&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;待评价&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&#34;db-card&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD&#34;&gt;
+    &lt;div class=&#34;db-card-subject&#34;&gt;
+        &lt;div class=&#34;db-card-post&#34;&gt;
+            &lt;img src=&#34;https://ryihuan.github.io/neodb.jpg&#34; alt=&#34;加载中...&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD-img&#34; style=&#34;max-width: 100%; height: auto;&#34;&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-content&#34;&gt;
+            &lt;div class=&#34;db-card-title&#34;&gt;
+                &lt;a href=&#34;https://neodb.social/tv/season/6TxtiOjCGL7XLNN5KvrwmD&#34; class=&#34;cute&#34; target=&#34;_blank&#34; rel=&#34;noreferrer&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD-title&#34;&gt;
+                    加载中...
+                &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD-content&#34;&gt;
+                
+                完结了再写
+                
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&#34;db-card-cate&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD-category&#34;&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.addEventListener(&#39;DOMContentLoaded&#39;, function () {
+        const cardId = &#39;neodb-card-6TxtiOjCGL7XLNN5KvrwmD&#39;;
+        const apiUrl = &#39;https:\/\/neodb.social\/api\/tv\/season\/6TxtiOjCGL7XLNN5KvrwmD&#39;;
+
+        if (!apiUrl) return;
+
+        
+        fetch(apiUrl)
+            .then(response =&gt; {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(data =&gt; {
+                
+                const titleEl = document.getElementById(cardId + &#39;-title&#39;);
+                if (titleEl &amp;&amp; data.title) {
+                    titleEl.textContent = data.title;
+                }
+
+                
+                const imgEl = document.getElementById(cardId + &#39;-img&#39;);
+                if (imgEl &amp;&amp; data.cover_image_url) {
+                    imgEl.src = data.cover_image_url;
+                    imgEl.alt = data.title || &#39;封面图片&#39;;
+                }
+
+                
+                const contentEl = document.getElementById(cardId + &#39;-content&#39;);
+                const customContent = &#39;完结了再写&#39;;
+                if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
+                    contentEl.innerHTML = data.brief;
+                }
+
+                
+                const cateEl = document.getElementById(cardId + &#39;-category&#39;);
+                if (cateEl &amp;&amp; data.category) {
+                    cateEl.textContent = data.category;
+                }
+            })
+            .catch(error =&gt; {
+                console.error(&#39;Failed to fetch NeoDB data:&#39;, error);
+                
+            });
+    });
+&lt;/script&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>又一次Stack主题博客装修</title>
         <link>https://ryihuan.github.io/p/%E5%8F%88%E4%B8%80%E6%AC%A1stack%E4%B8%BB%E9%A2%98%E5%8D%9A%E5%AE%A2%E8%A3%85%E4%BF%AE/</link>
         <pubDate>Fri, 02 Jan 2026 00:00:00 +0000</pubDate>
@@ -1021,6 +3766,45 @@
 &lt;em&gt;（呵呵呵此事在戮史亦有记载）&lt;/em&gt;&lt;br&gt;
 &lt;em&gt;（当时播出的时候揣摩了一下觉得会不会是求死呢，但求死的话就不会特意吸收了女王的力量再来了）&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;哥是什么类型，感觉XNTJ&lt;/em&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;260110-画手书中&#34;&gt;26.01.10 （画手书中）
+&lt;/h2&gt;&lt;p&gt;接1月3日，我这几天真的开始画了！放几张完成度高的&lt;br&gt;
+&lt;img src=&#34;https://ryihuan.github.io/26/011001.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;1&#34;
+	
+	
+&gt;&lt;img src=&#34;https://ryihuan.github.io/26/011002.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;2&#34;
+	
+	
+&gt;&lt;img src=&#34;https://ryihuan.github.io/26/011003.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;3&#34;
+	
+	
+&gt;&lt;br&gt;
+一边听鹅妈妈一边反复拉TV进度条一边画……很多画面参考了TV镜头，很偷懒！&lt;/p&gt;
+&lt;p&gt;画的过程中感觉小时候吠的发型不露额头，长大了露额头是不是在学哥啊 呜噗噗。（因为小时候的哥就露额头）&lt;/p&gt;
+&lt;p&gt;画着画着感觉产品真是充满着爱与救赎。简直就像库翁的公司理念一样，是爱和愿望交织的故事！&lt;em&gt;（当时看的时候我还吐槽AI和愿望都是高桥优也概念（）&lt;/em&gt;&lt;br&gt;
+一不小心就画了好多好多抱抱。真的太爱画哥俩抱抱了。第八集见面的时候就是从吠抱住尼酱开始，第43集又以哥哥抱住弟弟结束。&lt;br&gt;
+TV到43集哥俩的故事基本就划句号了，在这个节点喜欢上家产太好了因为我不爱等更新……&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;小字写一点Procreate Dream使用感想，感想是能直接在画布上画而且体验跟Procreate差不多简直太爽了！除了不能液化而我画画会比较依赖液化……&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;Dream太便携了，虽然功能上比较质朴，但是画这种PPT手书我觉得刚刚好，我愿称之为视频剪辑界的库乐队，动画届的PPT！&lt;/em&gt;&lt;br&gt;
+&lt;em&gt;还有就是吹石笔刷里的压力墨水笔尺寸开到最大画这种好爽，平时画画用的是另一支，画手书反而不那么爽了&lt;/em&gt;&lt;/p&gt;
 &lt;hr&gt;
 </description>
         </item>
