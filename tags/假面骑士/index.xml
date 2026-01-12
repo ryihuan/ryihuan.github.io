@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>尺途</copyright>
-        <lastBuildDate>Mon, 12 Jan 2026 00:29:03 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/tags/%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%AB/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 12 Jan 2026 21:15:30 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/tags/%E5%81%87%E9%9D%A2%E9%AA%91%E5%A3%AB/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>特摄吃</title>
         <link>https://ryihuan.github.io/p/%E7%89%B9%E6%91%84%E5%90%83/</link>
         <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
@@ -904,7 +904,43 @@ NeoDB受网络影响加载不出来属于正常现象，为此画了加载图，
             &lt;/div&gt;
             &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-31Czum2IycRIH3CNp56Ild-content&#34;&gt;
                 
-                待评价
+                W真的太好看了，是我看的第一部三条陆主笔的骑士，他好擅长在单元回里面穿插主线，单元回的主题和主线进行到的部分总是互相呼应，无论是单元回的内容还是主线都好好看，都不无聊。&lt;br&gt;
+我看到“两人一体的假面骑士”这个概念，我的游戏王脑子又发力了，跟34说卧槽这不是W游戏吗你快来看。34看了觉得菲利普像Astral，天呐好精准！&lt;br&gt;
+&lt;br&gt;
+&lt;blockquote style=&#34;
+  margin: 0;
+  white-space: pre-line;
+  width: auto;
+&#34;&gt;陪着恶魔一起走到地狱的尽头吧 翔太郎&lt;/blockquote&gt;
+看到这里感觉W给我下猛药了SOS 好喜欢这种深度绑定关系，主要还是三条陆写得太好了（磕头）虽然你俩性格并不像W游戏，但这个关系走向真的让我想起看游戏王的时候了，好多地方都感动到，一起当蒙面唱将、一起骑摩托、獠牙记忆体、初次相遇、家人和aibo之间的抉择、最后舍不得拔掉记忆体的部分&lt;br&gt;
+&lt;br&gt;
+这是我当时很喜欢的一个网友评价我要贴出来：
+&lt;blockquote style=&#34;
+  margin: 0;
+  white-space: pre-line;
+  width: auto;
+&#34;&gt;极限那两集，翔太郎跟不上菲利普的力量导致没法变身，按通常套路来说，之后的发展应该是翔太郎努力变强最后跟上菲利普，但最后的结局是他们还是变身了，但并不是翔太郎变强，而是菲利普接受了他的弱。当时真的很触动。不仅仅是两个人一起变强，更是接受对方的一切，包括弱点。这就是最佳搭档啊！&lt;/blockquote&gt;
+&lt;br&gt;
+侦探事务所的大家都太萌了，即使是偶尔出现的配角也萌的要死，好喜欢风都，好喜欢大家。写到这里回忆起一些剧情画面眼睛又尿尿了。好喜欢剧场版的风都的风。反派角色的大家也好有魅力，好喜欢前姐夫，好喜欢若菜，姐也是个苦命人，不得不想到Drive的反派也好有爱，这个以后再写。&lt;br&gt;
+颅骨跟翔太郎的精神传承也看得好感动，总之感动的地方太多了……&lt;br&gt;
+&lt;br&gt;
+但我对三条陆可能唯一的不满是他太喜欢写结婚了……我喜欢看暧昧的留白，但我不喜欢看你们真的结婚；喜欢看为了推进剧情的结婚（姐姐姐夫），不喜欢看包饺子式的结婚；而且我花了很长的时间试图去理解为什么亚树子突然就爱上照井龙了，最后还是没能理解&lt;br&gt;
+我觉得菲翔真的很纯美但最后也没能成为我特别留恋的cp可能也因为三条陆写得太满了，没有不好的意思，就是觉得他在TV里面已经诠释得太到位了。&lt;br&gt;
+&lt;br&gt;
+最后贴一下当时看最后一集的感想：
+&lt;blockquote style=&#34;
+  margin: 0;
+  white-space: pre-line;
+  width: auto;
+&#34;&gt;终于还是等来了饺子  
+虽然全家都穿回了初期的衣服这里很感动……
+
+唉但是 但是  
+若叶给身体给来人是不是太突兀了  
+来人就这么欣然接受了会不会太突兀了  
+总觉得故事其实在46炸了园咲家就已经结束了 但为了让财团x现身强行写了三集
+
+不过翔太郎守寡和菲利普一直看着饱受守寡折磨的翔太郎这一点挺好看的呃……&lt;/blockquote&gt;
                 
             &lt;/div&gt;
         &lt;/div&gt;
@@ -943,7 +979,7 @@ NeoDB受网络影响加载不出来属于正常现象，为此画了加载图，
 
                 
                 const contentEl = document.getElementById(cardId + &#39;-content&#39;);
-                const customContent = &#39;待评价&#39;;
+                const customContent = &#39;W真的太好看了，是我看的第一部三条陆主笔的骑士，他好擅长在单元回里面穿插主线，单元回的主题和主线进行到的部分总是互相呼应，无论是单元回的内容还是主线都好好看，都不无聊。\u003cbr\u003e\r\n我看到“两人一体的假面骑士”这个概念，我的游戏王脑子又发力了，跟34说卧槽这不是W游戏吗你快来看。34看了觉得菲利普像Astral，天呐好精准！\u003cbr\u003e\r\n\u003cbr\u003e\r\n\u003cblockquote style=\u0022\r\n  margin: 0;\r\n  white-space: pre-line;\r\n  width: auto;\r\n\u0022\u003e陪着恶魔一起走到地狱的尽头吧 翔太郎\u003c\/blockquote\u003e\r\n看到这里感觉W给我下猛药了SOS 好喜欢这种深度绑定关系，主要还是三条陆写得太好了（磕头）虽然你俩性格并不像W游戏，但这个关系走向真的让我想起看游戏王的时候了，好多地方都感动到，一起当蒙面唱将、一起骑摩托、獠牙记忆体、初次相遇、家人和aibo之间的抉择、最后舍不得拔掉记忆体的部分\u003cbr\u003e\r\n\u003cbr\u003e\r\n这是我当时很喜欢的一个网友评价我要贴出来：\r\n\u003cblockquote style=\u0022\r\n  margin: 0;\r\n  white-space: pre-line;\r\n  width: auto;\r\n\u0022\u003e极限那两集，翔太郎跟不上菲利普的力量导致没法变身，按通常套路来说，之后的发展应该是翔太郎努力变强最后跟上菲利普，但最后的结局是他们还是变身了，但并不是翔太郎变强，而是菲利普接受了他的弱。当时真的很触动。不仅仅是两个人一起变强，更是接受对方的一切，包括弱点。这就是最佳搭档啊！\u003c\/blockquote\u003e\r\n\u003cbr\u003e\r\n侦探事务所的大家都太萌了，即使是偶尔出现的配角也萌的要死，好喜欢风都，好喜欢大家。写到这里回忆起一些剧情画面眼睛又尿尿了。好喜欢剧场版的风都的风。反派角色的大家也好有魅力，好喜欢前姐夫，好喜欢若菜，姐也是个苦命人，不得不想到Drive的反派也好有爱，这个以后再写。\u003cbr\u003e\r\n颅骨跟翔太郎的精神传承也看得好感动，总之感动的地方太多了……\u003cbr\u003e\r\n\u003cbr\u003e\r\n但我对三条陆可能唯一的不满是他太喜欢写结婚了……我喜欢看暧昧的留白，但我不喜欢看你们真的结婚；喜欢看为了推进剧情的结婚（姐姐姐夫），不喜欢看包饺子式的结婚；而且我花了很长的时间试图去理解为什么亚树子突然就爱上照井龙了，最后还是没能理解\u003cbr\u003e\r\n我觉得菲翔真的很纯美但最后也没能成为我特别留恋的cp可能也因为三条陆写得太满了，没有不好的意思，就是觉得他在TV里面已经诠释得太到位了。\u003cbr\u003e\r\n\u003cbr\u003e\r\n最后贴一下当时看最后一集的感想：\r\n\u003cblockquote style=\u0022\r\n  margin: 0;\r\n  white-space: pre-line;\r\n  width: auto;\r\n\u0022\u003e终于还是等来了饺子  \r\n虽然全家都穿回了初期的衣服这里很感动……\r\n\r\n唉但是 但是  \r\n若叶给身体给来人是不是太突兀了  \r\n来人就这么欣然接受了会不会太突兀了  \r\n总觉得故事其实在46炸了园咲家就已经结束了 但为了让财团x现身强行写了三集\r\n\r\n不过翔太郎守寡和菲利普一直看着饱受守寡折磨的翔太郎这一点挺好看的呃……\u003c\/blockquote\u003e&#39;;
                 if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
                     contentEl.innerHTML = data.brief;
                 }
