@@ -1268,6 +1268,140 @@ document.addEventListener('click', function(e) {
      
     
         
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<div id="waline" class="waline-container"></div>
+<style>
+     
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+     
+    [data-scheme="dark"] .wl-panel {
+        background: #212121;
+    }
+     
+    .wl-btn.primary {
+        background: var(--body-text-color);
+        border: none;
+    }
+     
+    .wl-btn.primary:hover, .wl-btn.primary:active {
+        border: none;
+        background: var(--light-red);
+    }
+     
+    .wl-sort li {
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: var(--body-text-color);
+        }
+        &.active {
+            color: var(--light-red);
+        }
+    }
+     
+    [data-waline] a {
+        color: var(--body-text-color);
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: var(--light-red)
+        }
+    }
+     
+    .wl-card .wl-delete, .wl-card .wl-like, .wl-card .wl-reply, .wl-card .wl-edit {
+        transition: color 0.2s ease-in-out;
+        &:hover, &.active {
+            color: var(--light-red);
+        }
+    }
+     
+    .wl-btn:hover, .wl-btn:active {
+        border-color: var(--light-red);
+        color: var(--light-red);
+    }
+     
+    .wl-action {
+        transition: color 0.2s ease-in-out;
+        &:hover, &.active{
+            color: var(--light-red);
+        }
+    }
+     
+    .wl-header label {
+        font-size: 1.4rem;
+        padding-top: 1.8rem;
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+     
+    .wl-editor {
+        padding-left: 1.6rem;
+        padding-top: 0.5rem;
+    }
+     
+    .wl-header input {
+        margin: 1rem;
+        border-radius: 4px;
+        font-size: 1.4rem;
+    }
+     
+    .wl-preview h4 {
+        color: var(--body-text-color);
+    }
+     
+    .wl-cards .wl-user .verified-icon {
+        background: none;
+    }
+     
+    .wl-gif-popup input {
+        background-color: var(--card-background);
+        padding-left: 1.6rem;
+        border-radius: 8px;
+        &:focus-visible {
+            color: var(--body-text-color);
+        }
+    }
+     
+    .wl-gif-popup img {
+        border-radius: 8px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            border-radius: 8px;
+            mask: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 100%);
+        }
+    }
+     
+    .wl-emoji-popup button:hover {
+        background: none;
+    }
+     
+    .wl-emoji-popup .wl-emoji {
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.5) rotate(-15deg);
+        }
+    }
+     
+    .wl-card .wl-meta>span {
+        display: none;
+    }
+     
+    .wl-card .wl-content {
+        padding-top: 0;
+    }
+</style><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://gcore.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/"],"lang":"zh-cn","locale":{"admin":"博主","link":"网址（选填）","mail":"邮箱（选填）","nick":"昵称（选填）","placeholder":"您无需登录即可发表评论。如果需要收到回复通知，请留下您的邮箱地址。\n非登录状态下，如果您留下邮箱，您的头像将自动获取并设置为您的邮箱账户头像。\n由于vercle.app域名受到DNS污染，大陆ip地址无法参与评论。"},"requiredMeta":["name","email","url"],"serverURL":"https://hugo-waline-eosin.vercel.app/","visitor":false});
+</script>
+
     
 
     <footer class="site-footer">
@@ -1322,7 +1456,7 @@ document.addEventListener('click', function(e) {
             
         
         发表了12篇文章 · 
-        总计71.23k字
+        总计71.88k字
     </section>
 
     <section class="powerby">

@@ -7,7 +7,7 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
         <copyright>尺途</copyright>
-        <lastBuildDate>Sun, 08 Feb 2026 17:43:03 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/tags/%E4%B8%9C%E6%98%A0/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 Feb 2026 23:34:11 +0800</lastBuildDate><atom:link href="https://ryihuan.github.io/tags/%E4%B8%9C%E6%98%A0/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>我不要豪兽者完结啊！！</title>
         <link>https://ryihuan.github.io/p/%E6%88%91%E4%B8%8D%E8%A6%81%E8%B1%AA%E5%85%BD%E8%80%85%E5%AE%8C%E7%BB%93%E5%95%8A/</link>
         <pubDate>Sun, 08 Feb 2026 00:00:00 +0000</pubDate>
@@ -3743,7 +3743,14 @@ build在我这里就比较复杂，我觉得它大概是精彩的 但是没办�
             &lt;/div&gt;
             &lt;div class=&#34;db-card-abstract&#34; id=&#34;neodb-card-6TxtiOjCGL7XLNN5KvrwmD-content&#34;&gt;
                 
-                完结了再写
+                今天（2026.02.08）刚完结，现在我对豪兽者唯有溺爱，可能等到我二刷三刷冷静下来才写得出客观一点的评价&lt;br&gt;
+可以直接去看&lt;a class=&#34;link&#34; href=&#34;https://ryihuan.github.io/p/%E6%88%91%E4%B8%8D%E8%A6%81%E8%B1%AA%E5%85%BD%E8%80%85%E5%AE%8C%E7%BB%93%E5%95%8A/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;这篇
+    &lt;span style=&#34;white-space: nowrap;&#34;&gt;&lt;svg width=&#34;.7em&#34; height=&#34;.7em&#34; viewBox=&#34;0 0 21 21&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34;&gt;    &lt;path d=&#34;m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;path d=&#34;M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z&#34; fill=&#34;currentColor&#34;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/span&gt;
+&lt;/a&gt;&lt;/p&gt;
+对的，我要写一下我为什么觉得豪兽是一部悼极狐之作（调侃意味不是认真的），&lt;br&gt;
+1. AIと願い，像高桥爱写的东西&lt;br&gt;
+2. 都有塑愿神，大家都是为了实现自己的愿望而打起来&lt;br&gt;
+3. 狼最后的最后许的愿跟霸牛在绘马上写的愿望概念很类似&lt;br&gt;
                 
             &lt;/div&gt;
         &lt;/div&gt;
@@ -3782,7 +3789,7 @@ build在我这里就比较复杂，我觉得它大概是精彩的 但是没办�
 
                 
                 const contentEl = document.getElementById(cardId + &#39;-content&#39;);
-                const customContent = &#39;完结了再写&#39;;
+                const customContent = &#39;今天（2026.02.08）刚完结，现在我对豪兽者唯有溺爱，可能等到我二刷三刷冷静下来才写得出客观一点的评价\u003cbr\u003e\r\n可以直接去看\u003ca class=\u0022link\u0022 href=\u0022https:\/\/ryihuan.github.io\/p\/%E6%88%91%E4%B8%8D%E8%A6%81%E8%B1%AA%E5%85%BD%E8%80%85%E5%AE%8C%E7%BB%93%E5%95%8A\/\u0022 target=\u0022_blank\u0022 rel=\u0022noopener\u0022\u003e这篇\r\n    \u003cspan style=\u0022white-space: nowrap;\u0022\u003e\u003csvg width=\u0022.7em\u0022 height=\u0022.7em\u0022 viewBox=\u00220 0 21 21\u0022 xmlns=\u0022http:\/\/www.w3.org\/2000\/svg\u0022\u003e    \u003cpath d=\u0022m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z\u0022 fill=\u0022currentColor\u0022\u003e\u003c\/path\u003e\u003cpath d=\u0022M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z\u0022 fill=\u0022currentColor\u0022\u003e\u003c\/path\u003e\u003c\/svg\u003e\u003c\/span\u003e\r\n\u003c\/a\u003e\u003c\/p\u003e\r\n对的，我要写一下我为什么觉得豪兽是一部悼极狐之作（调侃意味不是认真的），\u003cbr\u003e\r\n1. AIと願い，像高桥爱写的东西\u003cbr\u003e\r\n2. 都有塑愿神，大家都是为了实现自己的愿望而打起来\u003cbr\u003e\r\n3. 狼最后的最后许的愿跟霸牛在绘马上写的愿望概念很类似\u003cbr\u003e&#39;;
                 if (contentEl &amp;&amp; !customContent.trim() &amp;&amp; data.brief) {
                     contentEl.innerHTML = data.brief;
                 }
