@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="此人终于决定系统学习一下Git了">
+<title>Git学习笔记</title>
+
+<link rel='canonical' href='https://ryihuan.github.io/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
+
+<link rel="stylesheet" href="/scss/style.min.47ba3fc266c992fd8b98ace70d65d74353b42c7965d6fce944f614ef6d4b5876.css"><meta property='og:title' content="Git学习笔记">
+<meta property='og:description' content="此人终于决定系统学习一下Git了">
+<meta property='og:url' content='https://ryihuan.github.io/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/'>
+<meta property='og:site_name' content='某人的小窝'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Git' /><meta property='article:published_time' content='2026-02-27T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-27T23:17:07&#43;08:00'/>
+<meta name="twitter:title" content="Git学习笔记">
+<meta name="twitter:description" content="此人终于决定系统学习一下Git了">
+    <link rel="shortcut icon" href="/favicon.png" />
+<script>
+
+function updateAvatar() {
+  const avatarImg = document.querySelector('.site-avatar .site-logo');
+  if (!avatarImg) return;
+  
+  const isDark = document.documentElement.getAttribute('data-scheme') === 'dark';
+  const lightSrc = avatarImg.getAttribute('data-src-light') || avatarImg.src;
+  const darkSrc = avatarImg.getAttribute('data-src-dark');
+  
+  if (darkSrc && isDark) {
+    avatarImg.src = darkSrc;
+    
+    triggerAvatarAnimation(avatarImg);
+  } else if (lightSrc && !isDark) {
+    avatarImg.src = lightSrc;
+  }
+}
+
+
+function triggerAvatarAnimation(avatarImg) {
+  avatarImg.classList.add('rotating-overshoot');
+  setTimeout(() => {
+    avatarImg.classList.remove('rotating-overshoot');
+  }, 2000); 
+}
+
+
+document.addEventListener('DOMContentLoaded', updateAvatar);
+
+
+new MutationObserver(function(mutations) {
+  mutations.forEach(function(mutation) {
+    if (mutation.attributeName === 'data-scheme') {
+      setTimeout(updateAvatar, 50);
+    }
+  });
+}).observe(document.documentElement, { attributes: true });
+</script>
+
+
+<script>
+document.addEventListener('click', function(e) {
+    const articleDetails = e.target.closest('.article-details');
+    if (articleDetails && !e.target.closest('.article-category a')) {
+        const titleLink = articleDetails.querySelector('.article-title a');
+        if (titleLink) {
+            window.location.href = titleLink.href;
+        }
+    }
+});
+</script>
+
+    </head>
+    <body class="
+    article-page
+    
+    has-toc
+">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="切换菜单">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                    
+                        
+                        
+                        <img src="/img/light_hu_ef46a703a97cb3c9.jpg" 
+                            data-src-light="/img/light_hu_ef46a703a97cb3c9.jpg"
+                            data-src-dark="/img/dark_hu_206abf790e78d3dd.jpg"
+                            width="300" 
+                            height="300" 
+                            class="site-logo" 
+                            loading="lazy" 
+                            alt="Avatar">
+                    
+                
+                </a>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">某人的小窝</a></h1>
+            <h2 class="site-description">互联网有房一族。</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>主页</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>关于</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>归档</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/gallery/' >
+                
+                
+                
+                    <svg width="22px" height="22px" viewBox="0 0 5.28 5.28" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-width="0.32999999999999996" d="M0.825 1.1a0.275 0.275 0 0 1 0.275 -0.275h3.08a0.275 0.275 0 0 1 0.275 0.275v3.08a0.275 0.275 0 0 1 -0.275 0.275H1.1a0.275 0.275 0 0 1 -0.275 -0.275z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32999999999999996" d="m0.825 3.795 0.935 -0.935 0.66 0.66 1.1 -1.1 0.935 0.935"/></svg>
+                
+                <span>画廊</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>搜索</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/links/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+  <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+</svg>
+
+
+
+                
+                <span>链接</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+                
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>暗色模式</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    <aside class="sidebar right-sidebar sticky">
+        
+            
+                
+    <section class="widget archives">
+        <div class="widget-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+        </div>
+        <h2 class="widget-title section-title">目录</h2>
+        
+        <div class="widget--toc">
+            <nav id="TableOfContents">
+  <ol>
+    <li><a href="#教程列表">教程列表</a></li>
+    <li><a href="#起步">起步</a>
+      <ol>
+        <li><a href="#什么是git">什么是Git</a></li>
+        <li><a href="#什么是版本控制系统vcs">什么是版本控制系统（VCS）</a>
+          <ol>
+            <li><a href="#本地版本控制系统">本地版本控制系统</a></li>
+            <li><a href="#集中化的版本控制系统cvcs">集中化的版本控制系统（CVCS）</a></li>
+            <li><a href="#分布式版本控制系统dvcs">分布式版本控制系统（DVCS）</a></li>
+          </ol>
+        </li>
+        <li><a href="#git配置">Git配置</a></li>
+      </ol>
+    </li>
+    <li><a href="#git基础">Git基础</a>
+      <ol>
+        <li><a href="#获取git仓库">获取Git仓库</a>
+          <ol>
+            <li><a href="#什么是版本库">什么是版本库</a></li>
+            <li><a href="#创建版本库">创建版本库</a></li>
+            <li><a href="#把文件添加到版本库">把文件添加到版本库</a></li>
+          </ol>
+        </li>
+      </ol>
+    </li>
+  </ol>
+</nav>
+        </div>
+    </section>
+
+            
+        
+    </aside>
+
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/note/" style="background-color: #1e1ece9f; color: #ffffffff;">
+                个人学习笔记
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/p/git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">Git学习笔记</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            此人终于决定系统学习一下Git了
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Feb 27, 2026</time>
+            </div>
+        
+        <div class="article-lastmod">
+                <?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <g id="g137" transform="matrix(0.344676, 0, 0, 0.344676, -1.097733, -1.110916)">
+    <path d="M 65.269 18.765 L 57.863 11.359 C 57.472 10.968 56.84 10.968 56.449 11.359 L 51.688 16.12 L 30.527 37.28 L 28.411 39.396 C 28.298000000000002 39.509 28.213 39.648 28.165 39.801 L 24.727 50.646 C 24.614 51.001 24.709 51.391 24.973 51.655 C 25.163 51.845 25.419 51.948 25.68 51.948 C 25.781 51.948 25.883 51.932 25.982 51.901 L 36.826 48.463 C 36.979 48.415 37.118 48.33 37.231 48.217 L 39.347 46.101 L 60.508 24.941 L 65.269 20.18 C 65.66 19.789 65.66 19.156 65.269 18.765 Z M 39.378 45.993 L 30.558 37.173 M 60.325 24.77 L 52.057 16.501" id="path133" style="stroke-width: 3.8587px;"/>
+    <path d="M 39.438 15.934 L 15.95 15.95 C 13.194 15.95 10.438 18.706 10.438 21.463 L 10.438 59.498 C 10.438 62.255 13.194 65.011 15.95 65.011 L 54.813 65.011 C 57.569 65.011 60.325 62.255 60.325 59.498 L 60.438 36.934" id="path135" style="stroke-width: 3.8587px;"/>
+  </g>
+</svg>
+                <time>
+                    Feb 27, 2026 23:17 &#43;0800
+                </time>
+            </div>
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    阅读时长: 4 分钟
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p><em>看不太进去文字但又觉得应该系统学习一下，努力用脑中</em><br>
+<em>本文仅用于个人学习消化</em></p>
+<h2 id="教程列表">教程列表
+</h2><p><a class="link" href="https://git-scm.com/book/zh/v2"  target="_blank" rel="noopener"
+    >Pro Git 中文版
+    <span style="white-space: nowrap;"><svg width=".7em"
+        height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+        <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+            fill="currentColor">
+    </svg></span>
+    
+</a><br>
+<a class="link" href="https://liaoxuefeng.com/books/git/introduction/index.html"  target="_blank" rel="noopener"
+    >廖雪峰的Git教程
+    <span style="white-space: nowrap;"><svg width=".7em"
+        height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+        <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+            fill="currentColor">
+    </svg></span>
+    
+</a><br>
+<a class="link" href="https://learngitbranching.js.org/?demo=&amp;locale=zh_CN"  target="_blank" rel="noopener"
+    >Learn Git Branching
+    <span style="white-space: nowrap;"><svg width=".7em"
+        height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+        <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+            fill="currentColor">
+    </svg></span>
+    
+</a></p>
+<p>综合前两个记笔记，不涉及暂时用不到的部分，Learn Git Branching用来上手实操</p>
+<h2 id="起步">起步
+</h2><h3 id="什么是git">什么是Git
+</h3><p>Git是目前世界上最先进的<strong>分布式</strong>版本控制系统。是开源服务器系统软件Linux的创始人Linus写的。</p>
+<h3 id="什么是版本控制系统vcs">什么是版本控制系统（VCS）
+</h3><p>版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。</p>
+<p>版本控制系统（VCS）可以将选定的文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态，你可以比较文件的变化细节，查出最后是谁修改了哪个地方，从而找出导致怪异问题出现的原因，又是谁在何时报告了某个功能缺陷等等。 使用版本控制系统通常还意味着，就算你乱来一气把整个项目中的文件改的改删的删，你也照样可以轻松恢复到原先的样子。 但额外增加的工作量却微乎其微。</p>
+<h4 id="本地版本控制系统">本地版本控制系统
+</h4><p><strong>特征：</strong> 部署在本地，大多都是采用某种简单的数据库来记录文件的历次更新差异。</p>
+<p><strong>最流行的一种：</strong> RCS</p>
+<p><strong>缺点：</strong> 只要整个项目的历史记录被保存在单一位置，就有丢失所有历史更新记录的风险。</p>
+<h4 id="集中化的版本控制系统cvcs">集中化的版本控制系统（CVCS）
+</h4><p><strong>如：</strong> CVS、Subversion 以及 Perforce<br>
+CVS是最早的开源而且免费的集中式版本控制系统，由于CVS自身设计的问题，会造成提交文件不完整，版本库莫名其妙损坏的情况<br>
+同样是开源而且免费的SVN修正了CVS的一些稳定性问题，是目前用得最多的集中式版本库控制系统<br>
+IBM的ClearCase：安装大运行慢，收费<br>
+微软的VSS：集成在Visual Studio，反人类设计</p>
+<p><strong>特征：</strong> 有一个单一的集中管理的服务器，保存所有文件的修订版本，而协同工作的人们都通过客户端连到这台服务器，取出最新的文件或者提交更新。</p>
+<p><strong>优点：</strong><br>
+每个人都可以在一定程度上看到项目中的其他人正在做些什么<br>
+管理员可以轻松掌控每个开发者的权限<br>
+比在各个客户端上维护本地数据库更轻松容易</p>
+<p><strong>缺点：</strong><br>
+必须联网才能工作<br>
+中央服务器宕机则无法工作<br>
+如果中心数据库所在的磁盘发生损坏，又没有做恰当备份，将丢失所有数据</p>
+<h4 id="分布式版本控制系统dvcs">分布式版本控制系统（DVCS）
+</h4><p><strong>如：</strong> Git、Mercurial 以及 Darcs</p>
+<p><strong>特征：</strong> 客户端并不只提取最新版本的文件快照， 而是把代码仓库完整地镜像下来，包括完整的历史记录</p>
+<p><strong>优点：</strong><br>
+没有“中央服务器”，每个人的电脑上都是一个完整的版本库<br>
+不需要联网</p>
+<p><strong>协作方式：</strong> 比方说你在自己电脑上改了文件A，你的同事也在他的电脑上改了文件A，这时，你们俩之间只需把各自的修改推送给对方，就可以互相看到对方的修改了。</p>
+<h3 id="git配置">Git配置
+</h3><p>安装完成后找到<code>开始菜单-&gt;Git-&gt;Git Bash</code></p>
+
+
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git config --global user.name <span class="s2">&#34;Your Name&#34;</span>
+</span></span><span class="line"><span class="cl">$ git config --global user.email <span class="s2">&#34;email@example.com&#34;</span></span></span></code></pre></div><p><em>我去我完全忘了我配置过？但是已经配置好了</em></p>
+<p>注意<code>git config</code>命令的<code>--global</code>参数，用了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然也可以对某个仓库指定不同的用户名和Email地址。</p>
+<h2 id="git基础">Git基础
+</h2><h3 id="获取git仓库">获取Git仓库
+</h3><h4 id="什么是版本库">什么是版本库
+</h4><p>版本库，又名仓库（Repository），<br>
+可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</p>
+<h4 id="创建版本库">创建版本库
+</h4><ol>
+<li>
+<p>选择一个合适的地方，创建一个空目录：</p>
+
+
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ mkdir learngit
+</span></span><span class="line"><span class="cl">$ <span class="nb">cd</span> learngit
+</span></span><span class="line"><span class="cl">$ <span class="nb">pwd</span>
+</span></span><span class="line"><span class="cl">/Users/michael/learngit</span></span></code></pre></div><p><code>$</code>：这不是命令的一部分，而是命令行提示符，表示你可以在这里输入命令。<br>
+<code>mkdir</code>：Make Directory 的缩写，意思是&quot;创建文件夹&quot;<br>
+<code>cd</code>：Change Directory 的缩写，意思是&quot;切换目录/进入文件夹&quot;<br>
+<code>pwd</code>：Print Working Directory 的缩写，意思是&quot;显示当前所在的目录路径&quot;<br>
+目录名不要使用中文</p>
+</li>
+<li>
+<p>通过<code>git init</code>命令把这个目录变成Git可以管理的仓库：</p>
+
+
+    <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">$ git init
+</span></span><span class="line"><span class="cl">Initialized empty Git repository in /Users/michael/learngit/.git/</span></span></code></pre></div><p>该命令将创建一个名为<code>.git</code>的子目录，这个子目录含有你初始化的Git仓库中所有的必须文件，这些文件是Git仓库的骨干。<br>
+没事千万不要手动修改这个目录里面的文件 <br>
+如果你没有看到<code>.git</code>目录，那是因为这个目录默认是隐藏的，用<code>ls -ah</code>命令就可以看见。</p>
+</li>
+</ol>
+<p>也不一定必须在空目录下创建Git仓库，选择一个已经有东西的目录也是可以的。</p>
+<h4 id="把文件添加到版本库">把文件添加到版本库
+</h4>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/git/">Git</a>
+        
+    </section>
+
+
+    
+    <section class="article-copyright">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-copyright" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <path d="M14.5 9a3.5 4 0 1 0 0 6" />
+</svg>
+
+
+
+        <span>Licensed under <a class="link" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans"  target="_blank" rel="noopener"
+    >CC BY-NC-SA 4.0
+    <span style="white-space: nowrap;"><svg width=".7em"
+        height=".7em" viewBox="0 0 21 21" xmlns="http://www.w3.org/2000/svg">
+        <path d="m13 3l3.293 3.293l-7 7l1.414 1.414l7-7L21 11V3z" fill="currentColor" />
+        <path d="M19 19H5V5h7l-2-2H5c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2v-5l-2-2v7z"
+            fill="currentColor">
+    </svg></span>
+    
+</a> 丨 署名 · 非商业性使用 · 相同方式共享</span>
+    </section>
+    
+
+    
+</footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">相关文章</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="">
+    <a href="/p/%E5%AD%A6%E4%B9%A0youtube@brwxddev%E5%86%99%E7%9A%84godot%E9%A1%B9%E7%9B%AEslot-machine/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">学习YouTube@brwxddev写的Godot项目（Slot Machine）</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/gd-script%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%E6%95%99%E7%A8%8B-by-brackeys/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">GD Script学习笔记（教程 by Brackeys）</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
+<div id="waline" class="waline-container"></div>
+<style>
+     
+    .waline-container {
+        background-color: var(--card-background);
+        border-radius: var(--card-border-radius);
+        box-shadow: var(--shadow-l1);
+        padding: var(--card-padding);
+        --waline-font-size: var(--article-font-size);
+    }
+    .waline-container .wl-count {
+        color: var(--card-text-color-main);
+    }
+     
+    [data-scheme="dark"] .wl-panel {
+        background: #212121;
+    }
+     
+    .wl-btn.primary {
+        background: var(--body-text-color);
+        border: none;
+    }
+     
+    .wl-btn.primary:hover, .wl-btn.primary:active {
+        border: none;
+        background: var(--light-red);
+    }
+     
+    .wl-sort li {
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: var(--body-text-color);
+        }
+        &.active {
+            color: var(--light-red);
+        }
+    }
+     
+    [data-waline] a {
+        color: var(--body-text-color);
+        transition: color 0.2s ease-in-out;
+        &:hover {
+            color: var(--light-red)
+        }
+    }
+     
+    .wl-card .wl-delete, .wl-card .wl-like, .wl-card .wl-reply, .wl-card .wl-edit {
+        transition: color 0.2s ease-in-out;
+        &:hover, &.active {
+            color: var(--light-red);
+        }
+    }
+     
+    .wl-btn:hover, .wl-btn:active {
+        border-color: var(--light-red);
+        color: var(--light-red);
+    }
+     
+    .wl-action {
+        transition: color 0.2s ease-in-out;
+        &:hover, &.active{
+            color: var(--light-red);
+        }
+    }
+     
+    .wl-header label {
+        font-size: 1.4rem;
+        padding-top: 1.8rem;
+        padding-left: 2rem;
+        padding-right: 0;
+    }
+     
+    .wl-editor {
+        padding-left: 1.6rem;
+        padding-top: 0.5rem;
+    }
+     
+    .wl-header input {
+        margin: 1rem;
+        border-radius: 4px;
+        font-size: 1.4rem;
+    }
+     
+    .wl-preview h4 {
+        color: var(--body-text-color);
+    }
+     
+    .wl-cards .wl-user .verified-icon {
+        background: none;
+    }
+     
+    .wl-gif-popup input {
+        background-color: var(--card-background);
+        padding-left: 1.6rem;
+        border-radius: 8px;
+        &:focus-visible {
+            color: var(--body-text-color);
+        }
+    }
+     
+    .wl-gif-popup img {
+        border-radius: 8px;
+        border: none;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            border-radius: 8px;
+            mask: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.75) 100%);
+        }
+    }
+     
+    .wl-emoji-popup button:hover {
+        background: none;
+    }
+     
+    .wl-emoji-popup .wl-emoji {
+        transition: transform 0.3s ease-in-out;
+        &:hover {
+            transform: scale(1.5) rotate(-15deg);
+        }
+    }
+     
+    .wl-card .wl-meta>span {
+        display: none;
+    }
+     
+    .wl-card .wl-content {
+        padding-top: 0;
+    }
+</style><script type="module">
+    import { init } from 'https://unpkg.com/@waline/client@v3/dist/waline.js';
+    init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://gcore.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/"],"lang":"zh-cn","locale":{"admin":"博主","link":"网址（选填）","mail":"邮箱（选填）","nick":"昵称（选填）","placeholder":"您无需登录即可发表评论。如果需要收到回复通知，请留下您的邮箱地址。\n非登录状态下，如果您留下邮箱，您的头像将自动获取并设置为您的邮箱账户头像。\n由于vercle.app域名受到DNS污染，大陆ip地址无法参与评论。"},"requiredMeta":["name","email","url"],"serverURL":"https://hugo-waline-eosin.vercel.app/","visitor":false});
+</script>
+
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2025 - 
+        
+        2026 尺途
+    </section>
+    
+        
+    <section class="running-time">
+    本博客已稳定运行
+    <span id="runningdays" class="running-days"></span>
+    </section>
+
+    
+    <section class="totalcount">
+        
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        发表了17篇文章 · 
+        总计89.36k字
+    </section>
+
+    <section class="powerby">
+        使用 <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> 构建 <br />
+        主题 <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.31.0">Stack</a></b> 由 <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a> 设计
+    </section>
+
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+    
+    
+    
+    <button class="toc-toggle hamburger hamburger--spin" type="button" id="toggle-toc" aria-label="Toggle table of contents">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    
+
+            </main>
+        </div>
+        <script type="text/javascript" src="/ts/main.0cfc05a2fb3e93f4fdb0c9e18b6a4c98cb32316def8db6fc5b2a1522bc17af8c.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+<style>
+    @font-face {
+        font-family: 'mkty';
+        src: url(https://ryihuan.github.io/font/mkty.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Fira Code';
+        src: 
+            url('/font/fira-code/FiraCode-Light.woff2') format('woff2'),
+            url('/font/fira-code/FiraCode-Light.woff') format('woff');
+    }
+
+    :root {
+        --base-font-family: 'mkty';
+        --code-font-family: 'Fira Code', 'mkty';
+    }
+
+    #TableOfContents > ul, ol {
+        ul, ol {
+            display: none;
+        }
+        .open {
+            display: block;
+        }
+    }
+
+    #backTopBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        z-index: 99;
+        cursor: url('/mouse/pointer.png'), pointer;
+        width: 30px;
+        height: 30px;
+        transition: all 0.2s ease-in-out;
+        background-color: var(--body-text-color);
+        mask-image: url(https://ryihuan.github.io/icons/top.svg);
+        mask-repeat: no-repeat;
+        mask-position: center;
+        mask-size: 30px 30px;
+    }
+
+    #backTopBtn:hover {
+        transform: scale(1.1);
+        background-color: var(--light-red);
+    }
+       
+
+</style>
+
+
+
+
+
+<style>
+[data-scheme="light"] body {
+    background: url('/background/light.057962b46384af00f94f39b9d159d278a3306c2c0abb37b1ebc64ac4dd4ddb31.jpg') no-repeat center top/cover fixed;
+}
+[data-scheme="dark"] body {
+    background: url('/background/dark.a6d74c49c491cbf1c6f832e8d95ef606caf9bb6a3f1c256e21d578231d048e09.jpg') no-repeat center top/cover fixed;
+}
+</style>
+
+
+<script>
+function initTocHide() {
+    
+    let toc = document.querySelector(".widget--toc");
+    if (!toc) {
+        return;
+    }
+    
+    window.addEventListener('scroll', function() {
+        
+        let openUl = document.querySelectorAll(".open");
+        if (openUl.length > 0) {
+            openUl.forEach((ul) => {
+            ul.classList.remove("open")
+            })
+        }
+        
+        let currentLi = document.querySelector(".active-class");
+        if (!currentLi) {
+            return
+        }
+        
+        if (currentLi.children.length > 1) {
+            currentLi.children[1].classList.add("open")
+        }
+        
+        let ul = currentLi.parentElement;
+        do {
+            ul.classList.add("open");
+            ul = ul.parentElement.parentElement
+        } while (ul !== undefined && (ul.localName === 'ul' || ul.localName === 'ol'))
+    });
+}
+initTocHide()
+
+ 
+    function initScrollTop() {
+        let rightSideBar = document.querySelector(".right-sidebar");
+        if (!rightSideBar) {
+            return;
+        }
+        
+        let btn = document.createElement("div");
+        btn.id = "backTopBtn";
+        btn.onclick = backToTop
+        rightSideBar.appendChild(btn)
+        
+        window.onscroll = function() {
+            
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                btn.style.display = "block";
+            } else {
+                btn.style.display = "none";
+            }
+        };
+    }
+
+     
+    function backToTop(){
+        window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+
+    initScrollTop();
+</script>
+
+<script>
+      
+    let s1 = '2025-09-22'; 
+    s1 = new Date(s1.replace(/-/g, "/"));
+    let s2 = new Date();
+    let timeDifference = s2.getTime() - s1.getTime();
+
+    let days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+
+    let result = days + "天" + hours + "小时" + minutes + "分钟";
+    document.getElementById('runningdays').innerHTML = result;
+</script>
+
+<script>
+ 
+document.addEventListener('DOMContentLoaded', function() {
+    const pagination = document.querySelector('.pagination');
+    const pageLinks = document.querySelectorAll('.page-link');
+    let currentPage = document.querySelector('.page-link.current');
+
+    pageLinks.forEach(link => {
+        link.addEventListener('mouseenter', function() {
+            
+            if (!this.classList.contains('current') && currentPage) {
+                currentPage.classList.add('reset-style');
+            }
+        });
+
+        link.addEventListener('mouseleave', function() {
+            
+            if (currentPage) {
+                currentPage.classList.remove('reset-style');
+            }
+        });
+    });
+});
+</script>
+
+<style>
+    .highlight {
+         
+        max-height: 400px;
+        overflow: hidden;
+    }
+
+    .code-show {
+        max-height: none !important;
+    }
+
+    .code-more-box {
+        width: 100%;
+        padding-top: 78px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(var(--card-background)));
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .code-more-btn, .code-less-btn {
+        display: block;
+        margin: auto;
+        width: 100%;
+        height: 78px;
+        background: none;
+    }
+
+    .code-less-btn {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .code-more-img, .code-less-img{
+        display: block;
+        margin: auto;
+        padding-right: 1rem;
+        width: 60px;
+        position: absolute;
+        right: 2.5rem;
+        bottom: 30px;
+    }
+
+    .code-less-img {
+        bottom: 25px !important;
+    }
+</style>
+
+
+<script>
+  function initCodeMoreBox() {
+    
+    
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    if (isMobile) {
+        
+        document.querySelectorAll('.highlight').forEach(block => {
+            block.style.maxHeight = 'none';
+            block.style.overflow = 'auto';
+        });
+        return;
+    }
+    
+
+    let codeBlocks = document.querySelectorAll(".highlight");
+    if (!codeBlocks || codeBlocks.length === 0) {
+        return;
+    }
+    
+    codeBlocks.forEach(codeBlock => {
+        
+        if (codeBlock.scrollHeight <= codeBlock.clientHeight) {
+            return;
+        }
+      
+        
+        const originalPosition = codeBlock.getBoundingClientRect().top + window.pageYOffset;
+      
+        
+        let codeMoreBox = document.createElement('div');
+        codeMoreBox.classList.add('code-more-box');
+        
+        
+        let codeMoreBtn = document.createElement('span');
+        codeMoreBtn.classList.add('code-more-btn');
+      
+        
+        let moreImg = document.createElement('img');
+        moreImg.classList.add('code-more-img');
+        moreImg.src = "https://ryihuan.github.io/icons/bottom.svg";
+        
+        
+        codeMoreBtn.appendChild(moreImg);
+        codeMoreBox.appendChild(codeMoreBtn);
+        codeBlock.appendChild(codeMoreBox);
+      
+        
+        codeMoreBox.addEventListener('click', function() {
+            
+            codeMoreBox.style.display = 'none';
+            
+            
+            codeBlock.classList.add('code-show');
+            
+            
+            let codeLessBox = document.createElement('div');
+            codeLessBox.classList.add('code-less-box');
+            
+            let codeLessBtn = document.createElement('span');
+            codeLessBtn.classList.add('code-less-btn');
+            
+            let lessImg = document.createElement('img');
+            lessImg.classList.add('code-less-img');
+            lessImg.src = "https://ryihuan.github.io/icons/top-pre.svg";
+            
+            
+            codeLessBtn.appendChild(lessImg);
+            codeLessBox.appendChild(codeLessBtn);
+            codeBlock.appendChild(codeLessBox);
+            
+            
+            codeLessBox.addEventListener('click', function() {
+                
+                codeLessBox.remove();
+                
+                
+                codeBlock.classList.remove('code-show');
+                
+                
+                codeMoreBox.style.display = 'block';
+                
+                
+                scrollToInitialPositionIfNeeded(originalPosition, codeBlock);
+                
+                
+                window.dispatchEvent(new Event('resize'));
+            });
+            
+            
+            window.dispatchEvent(new Event('resize'));
+        });
+    });
+}
+
+    function scrollToInitialPositionIfNeeded(originalPosition, codeBlock) {
+        
+        const viewportHeight = window.innerHeight;
+        const currentScroll = window.pageYOffset;
+        
+        
+        const isOriginalPositionInViewport = 
+        originalPosition >= currentScroll && 
+        originalPosition <= currentScroll + viewportHeight;
+        
+        
+        const codeBlockRect = codeBlock.getBoundingClientRect();
+        const isCodeBlockInViewport = 
+        codeBlockRect.top >= 0 && 
+        codeBlockRect.top <= viewportHeight;
+        
+        
+        if (!isOriginalPositionInViewport && !isCodeBlockInViewport) {
+            const header = document.querySelector('header');
+            let headerOffset = 0;
+      
+        if (header) {
+            const headerHeight = window.getComputedStyle(header).getPropertyValue('height');
+            headerOffset = parseInt(headerHeight.replace('px', '')) || 0;
+        }
+      
+        
+        const targetPosition = originalPosition - headerOffset - 20;
+      
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+      
+        console.log('触发滚动：初始位置不在视口内');
+        } else {
+        console.log('不触发滚动：初始位置或代码块在视口内');
+        }
+    }
+  
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        initCodeMoreBox();
+    });
+</script>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+            const tocToggle = document.getElementById('toggle-toc');
+
+            if (tocToggle) {
+                const rightSidebar = document.querySelector('.sidebar.right-sidebar');
+
+                
+                function updateButtonVisibility() {
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const showThreshold = 200;
+
+                    if (scrollTop > showThreshold) {
+                        tocToggle.classList.add('visible');
+                    } else {
+                        
+                        if (!rightSidebar || !rightSidebar.classList.contains('show')) {
+                            tocToggle.classList.remove('visible');
+                        }
+                    }
+                }
+
+                
+                function debounce(func, wait) {
+                    let timeout;
+                    return function () {
+                        const context = this;
+                        const args = arguments;
+                        clearTimeout(timeout);
+                        timeout = setTimeout(() => func.apply(context, args), wait);
+                    };
+                }
+
+                
+                window.addEventListener('scroll', debounce(updateButtonVisibility, 100));
+
+                
+                setTimeout(updateButtonVisibility, 500);
+
+                
+                if (rightSidebar) {
+                    
+                    const mask = document.createElement('div');
+                    mask.className = 'toc-mask';
+                    document.body.appendChild(mask);
+
+                    
+                    tocToggle.addEventListener('click', function () {
+                        this.classList.toggle('is-active');
+                        rightSidebar.classList.toggle('show');
+                        mask.classList.toggle('show');
+                        document.body.classList.toggle('no-scroll');
+
+                        
+                        this.classList.add('visible');
+                    });
+
+                    
+                    mask.addEventListener('click', function () {
+                        tocToggle.classList.remove('is-active');
+                        rightSidebar.classList.remove('show');
+                        this.classList.remove('show');
+                        document.body.classList.remove('no-scroll');
+                    });
+
+                    
+                    document.addEventListener('keydown', function (e) {
+                        if (e.key === 'Escape' && rightSidebar.classList.contains('show')) {
+                            tocToggle.classList.remove('is-active');
+                            rightSidebar.classList.remove('show');
+                            mask.classList.remove('show');
+                            document.body.classList.remove('no-scroll');
+                        }
+                    });
+                }
+            }
+        });
+</script>
+    </body>
+</html>

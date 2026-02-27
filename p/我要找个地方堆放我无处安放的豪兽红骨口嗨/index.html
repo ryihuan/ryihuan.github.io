@@ -10,7 +10,7 @@
 <meta property='og:description' content="阅读时长吓死人了，我给这篇缓缓画一个句号">
 <meta property='og:url' content='https://ryihuan.github.io/p/%E6%88%91%E8%A6%81%E6%89%BE%E4%B8%AA%E5%9C%B0%E6%96%B9%E5%A0%86%E6%94%BE%E6%88%91%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE%E7%9A%84%E8%B1%AA%E5%85%BD%E7%BA%A2%E9%AA%A8%E5%8F%A3%E5%97%A8/'>
 <meta property='og:site_name' content='某人的小窝'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='No.1战队豪兽者' /><meta property='article:tag' content='豪兽红骨' /><meta property='article:published_time' content='2025-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-08T23:10:02&#43;08:00'/><meta property='og:image' content='https://ryihuan.github.io/p/260102.png' />
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='No.1战队豪兽者' /><meta property='article:tag' content='豪兽红骨' /><meta property='article:published_time' content='2025-12-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2026-02-27T23:17:07&#43;08:00'/><meta property='og:image' content='https://ryihuan.github.io/p/260102.png' />
 <meta name="twitter:title" content="我要找个地方堆放我无处安放的豪兽红骨口嗨">
 <meta name="twitter:description" content="阅读时长吓死人了，我给这篇缓缓画一个句号"><meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content='https://ryihuan.github.io/p/260102.png' />
@@ -70,9 +70,8 @@ document.addEventListener('click', function(e) {
 
     </head>
     <body class="
-    article-page
-    
-    has-toc
+article-page
+has-toc
 ">
     <script>
         (function() {
@@ -200,6 +199,18 @@ document.addEventListener('click', function(e) {
         
         
         <li >
+            <a href='/gallery/' >
+                
+                
+                
+                    <svg width="22px" height="22px" viewBox="0 0 5.28 5.28" xmlns="http://www.w3.org/2000/svg" fill="none"><path stroke="currentColor" stroke-width="0.32999999999999996" d="M0.825 1.1a0.275 0.275 0 0 1 0.275 -0.275h3.08a0.275 0.275 0 0 1 0.275 0.275v3.08a0.275 0.275 0 0 1 -0.275 0.275H1.1a0.275 0.275 0 0 1 -0.275 -0.275z"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.32999999999999996" d="m0.825 3.795 0.935 -0.935 0.66 0.66 1.1 -1.1 0.935 0.935"/></svg>
+                
+                <span>画廊</span>
+            </a>
+        </li>
+        
+        
+        <li >
             <a href='/search/' >
                 
                 
@@ -265,7 +276,7 @@ document.addEventListener('click', function(e) {
     </ol>
 </aside>
 
-    <aside class="sidebar right-sidebar sticky">
+<aside class="sidebar right-sidebar sticky">
         
             
                 
@@ -327,7 +338,99 @@ document.addEventListener('click', function(e) {
 
 
             <main class="main full-width">
-    <article class="has-image main-article">
+
+
+
+<script>
+    (function () {
+        var correctPwd = "48";
+        var passwordHint = "TV播出时两个人的年龄和";
+
+        
+        var overlay = document.createElement('div');
+        overlay.style.cssText = `
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(8px);
+        z-index: 9999;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--base-font-family);
+    `;
+
+        overlay.innerHTML = `
+        <div style="text-align: center; width: 300px; padding: 2rem; background: var(--card-background); border-radius: var(--card-border-radius); box-shadow: var(--shadow-l2); color: var(--card-text-color-main);">
+            <h3 style="margin-bottom: 1rem; color: var(--text-color);">需要密码哟(◦'∀-◦)~☆</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--card-text-color-secondary);">${passwordHint}</p>
+            <input type="password" id="initialPassword" placeholder="密码" style="width: 100%; padding: 0.8rem; margin-bottom: 1rem; border: 1px solid var(--border-color); border-radius: var(--tag-border-radius); background: var(--card-background); color: var(--text-color); font-size: 1rem; box-sizing: border-box;">
+            <p id="initialError" style="color: #dc3545; margin-top: 0.8rem; font-size: 1.2rem;display: none;">密码错误，请重试</p>
+            <button id="initialSubmit" style="padding: 0.8rem 2rem; background: var(--light-red); color: white; border: none; border-radius: var(--tag-border-radius); cursor: pointer; font-size: 1.7rem; width: 100%;">提交</button>
+        </div>
+    `;
+        
+        overlay.addEventListener('wheel', function (e) {
+            e.preventDefault();
+        }, { passive: false });
+
+        overlay.addEventListener('touchmove', function (e) {
+            e.preventDefault();
+        }, { passive: false });
+        
+        document.body.appendChild(overlay);
+
+        
+        var passwordInput = document.getElementById('initialPassword');
+        var submitBtn = document.getElementById('initialSubmit');
+        var errorMsg = document.getElementById('initialError');
+
+        
+        function checkPassword() {
+            if (passwordInput.value === correctPwd) {
+                overlay.remove();
+            } else {
+                errorMsg.style.display = 'block';
+                passwordInput.value = '';
+                passwordInput.focus();
+            }
+        }
+
+        
+        submitBtn.addEventListener('click', checkPassword);
+
+        
+        passwordInput.addEventListener('keypress', function (e) {
+            if (e.key === 'Enter') {
+                checkPassword();
+            }
+        });
+
+        
+        passwordInput.addEventListener('input', function () {
+            errorMsg.style.display = 'none';
+        });
+
+        
+        passwordInput.focus();
+    })();
+        function retrySubmit() {
+            var inputPwd = document.getElementById('retryPassword').value;
+            var correctPwd = "48";
+
+            if (inputPwd === correctPwd) {
+                location.reload(); 
+            } else {
+                alert('密码错误');
+            }
+        }
+</script>
+
+
+<article class="has-image main-article">
     <header class="article-header">
         <div class="article-image">
             <a href="/p/%E6%88%91%E8%A6%81%E6%89%BE%E4%B8%AA%E5%9C%B0%E6%96%B9%E5%A0%86%E6%94%BE%E6%88%91%E6%97%A0%E5%A4%84%E5%AE%89%E6%94%BE%E7%9A%84%E8%B1%AA%E5%85%BD%E7%BA%A2%E9%AA%A8%E5%8F%A3%E5%97%A8/">
@@ -390,7 +493,7 @@ document.addEventListener('click', function(e) {
   </g>
 </svg>
                 <time>
-                    Feb 08, 2026 23:10 CST
+                    Feb 27, 2026 23:17 &#43;0800
                 </time>
             </div>
             <div>
@@ -1639,9 +1742,9 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
     
 </article>
 
-    
 
-    
+
+
 
 <aside class="related-content--wrapper">
     <h2 class="section-title">相关文章</h2>
@@ -1662,6 +1765,19 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
 
         <div class="article-details">
             <h2 class="article-title">我不要豪兽者完结啊！！</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="">
+    <a href="/p/%E8%AF%95%E5%9B%BE%E8%BF%98%E5%8E%9F%E8%B1%AA%E5%85%BD%E8%80%85%E6%8D%A2%E8%A7%92%E5%89%8D%E5%89%A7%E6%83%85%E5%8E%9F%E8%B2%8C%E7%AC%AC37-40%E9%9B%86/">
+        
+        
+
+        <div class="article-details">
+            <h2 class="article-title">试图还原豪兽者换角前剧情原貌（第37-40集）</h2>
         </div>
     </a>
 </article>
@@ -1709,9 +1825,9 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
     </div>
 </aside>
 
-     
-    
-        
+
+
+
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>
 <div id="waline" class="waline-container"></div>
 <style>
@@ -1846,9 +1962,9 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
     init({"dark":"html[data-scheme=\"dark\"]","el":"#waline","emoji":["https://gcore.jsdelivr.net/gh/Saidosi/azuki-emoji-for-waline@1.0/azukisan/"],"lang":"zh-cn","locale":{"admin":"博主","link":"网址（选填）","mail":"邮箱（选填）","nick":"昵称（选填）","placeholder":"您无需登录即可发表评论。如果需要收到回复通知，请留下您的邮箱地址。\n非登录状态下，如果您留下邮箱，您的头像将自动获取并设置为您的邮箱账户头像。\n由于vercle.app域名受到DNS污染，大陆ip地址无法参与评论。"},"requiredMeta":["name","email","url"],"serverURL":"https://hugo-waline-eosin.vercel.app/","visitor":false});
 </script>
 
-    
 
-    <footer class="site-footer">
+
+<footer class="site-footer">
     <section class="copyright">
         &copy; 
         
@@ -1899,8 +2015,20 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
         
             
         
-        发表了12篇文章 · 
-        总计71.88k字
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+        发表了17篇文章 · 
+        总计89.36k字
     </section>
 
     <section class="powerby">
@@ -1911,7 +2039,7 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
 </footer>
 
 
-    
+
 <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
     
@@ -1988,15 +2116,15 @@ krm还记得库翁的决胜台词是什么吗，已经每场自我介绍都会�
                 rel="stylesheet" 
                 href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
             >
-    
-    
-    
-    <button class="toc-toggle hamburger hamburger--spin" type="button" id="toggle-toc" aria-label="Toggle table of contents">
-        <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-        </span>
-    </button>
-    
+
+
+<button class="toc-toggle hamburger hamburger--spin" type="button" id="toggle-toc"
+    aria-label="Toggle table of contents">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+</button>
+
 
             </main>
         </div>
